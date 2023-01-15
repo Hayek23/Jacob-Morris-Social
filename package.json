@@ -1,0 +1,23 @@
+{
+  "name": "jacob-morris-social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hayek23/Jacob-Morris-Social.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hayek23/Jacob-Morris-Social/issues"
+  },
+  "homepage": "https://github.com/Hayek23/Jacob-Morris-Social#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  }
+}
