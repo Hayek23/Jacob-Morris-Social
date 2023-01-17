@@ -20,6 +20,6 @@ router.route('/:thoughtId').get(getOneThought).delete(deleteThought).put(updateT
 router.route('/:thoughtId/reactions').post(addReaction)
 
 // /api/thoughts/:thoughtId/reactions/:reactionId
-router.route('/:thoughtId/reactions/assignments/:reactionId').delete(removeReaction)
+router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction)
 
 module.exports = router
