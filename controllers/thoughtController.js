@@ -26,7 +26,7 @@ module.exports = {
         Thought.create(req.body)
         .then((thought) => {
             return User.findOneAndUpdate(
-                { _id: request.body.userId },
+                { _id: req.body.userId },
                 { $addToSet: { thoughts: thought._id } },
                 { new: true }
             );
@@ -64,7 +64,7 @@ module.exports = {
             : User.findOneAndUpdate(
                 { thoughts: req.params.thoughtId},
                 {$pull: { students: req.params.studentId } },
-                { new: true } 
+                { new: true }
             )
         )
         .then((user) =>
